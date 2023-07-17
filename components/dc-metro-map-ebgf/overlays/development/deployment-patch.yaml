@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-ebgf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-pyxis-tenant/appstudio/dc-metro-map-ebgf@sha256:f60e22f4d2ca7880d8608dc22a8b999b04467d95622da301d102d222e1206e19
+        name: my-nodejs
+        resources: {}
+status: {}
